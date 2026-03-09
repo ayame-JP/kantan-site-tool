@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>かんたんサイトづくり — 初めてでも自分で更新できる</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header-title">かんたんサイトづくり</h1>
+    <p class="header-desc">コードを書かずに、自分のサイトを作って・更新できるツールです</p>
+  </header>
+
+  <main class="main">
+    <!-- ステップ案内 -->
+    <nav class="steps" role="tablist" aria-label="作成の流れ">
+      <button type="button" class="step-btn active" data-step="1" aria-selected="true">1. デザインを選ぶ</button>
+      <button type="button" class="step-btn" data-step="2" aria-selected="false">2. 内容を入力</button>
+      <button type="button" class="step-btn" data-step="3" aria-selected="false">3. プレビュー</button>
+      <button type="button" class="step-btn" data-step="4" aria-selected="false">4. 保存・公開</button>
+    </nav>
+
+    <!-- Step 1: テンプレート選択 -->
+    <section id="step1" class="step-panel active" aria-hidden="false">
+      <h2 class="panel-title">デザインを選んでください</h2>
+      <div class="template-grid" id="templateList"></div>
+    </section>
+
+    <!-- Step 2: コンテンツ編集 -->
+    <section id="step2" class="step-panel" aria-hidden="true">
+      <h2 class="panel-title">サイトの内容を入力してください</h2>
+      <p class="panel-desc">各項目を埋めると、プレビューにすぐ反映されます。</p>
+      <div class="editor-form" id="editorForm"></div>
+    </section>
+
+    <!-- Step 3: プレビュー -->
+    <section id="step3" class="step-panel" aria-hidden="true">
+      <h2 class="panel-title">プレビュー</h2>
+      <p class="panel-desc">完成イメージです。戻って内容を変えることもできます。</p>
+      <div class="preview-wrap">
+        <iframe id="previewFrame" title="サイトのプレビュー" class="preview-frame"></iframe>
+      </div>
+    </section>
+
+    <!-- Step 4: 保存・公開 -->
+    <section id="step4" class="step-panel" aria-hidden="true">
+      <h2 class="panel-title">保存・公開</h2>
+      <p class="panel-desc">サイトを保存したり、HTMLとしてダウンロードして公開できます。</p>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="btnSaveProject">プロジェクトを保存（あとで編集用）</button>
+        <button type="button" class="btn btn-primary" id="btnDownloadHtml">HTMLをダウンロード（公開用）</button>
+        <label class="btn btn-secondary">
+          保存したプロジェクトを読み込む
+          <input type="file" id="inputLoadProject" accept=".json" hidden>
+        </label>
+      </div>
+      <p class="hint">「プロジェクトを保存」で .json を保存すると、あとからこのツールで開いて編集し直せます。</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>かんたんサイトづくり — 初めての人・自分で更新したい人のためのツール</p>
+  </footer>
+
+  <script src="js/templates.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
