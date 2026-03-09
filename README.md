@@ -4,37 +4,8 @@
 
 コードを書かずに、フォーム入力だけでサイトの内容を編集し、HTMLとしてダウンロードしたり、あとから編集用にプロジェクトを保存できるツールです。
 
----
+次のURLで誰でもツールにアクセスできます。
 
-## 誰でもアクセスできるURLで使う（GitHub Pages）
-
-このリポジトリを **GitHub Pages** で公開すると、次のURLで誰でもツールにアクセスできます。
-
-**公開後のURL**: **https://ayame-jp.github.io/kantan-site-tool/**
-
-### 設定手順（1回だけ）
-
-1. GitHub で [ayame-JP/kantan-site-tool](https://github.com/ayame-JP/kantan-site-tool) を開く
-2. **Settings**（設定）→ 左メニューの **Pages**
-3. **Build and deployment** の **Source** で **Deploy from a branch** を選択
-4. **Branch** で `main`、**Folder** で **/ (root)** を選び **Save** をクリック
-5. 1〜2分待つと、上記URLで公開されます
-
-## 使い方
-
-1. `index.html` をブラウザで開く（ダブルクリックまたはブラウザにドラッグ）
-2. **1. デザインを選ぶ** … シンプル / 店舗・ビジネス / 自己紹介・ポートフォリオ から選ぶ
-3. **2. 内容を入力** … 表示された項目にテキストを入力（プレビューに反映）
-4. **3. プレビュー** … 完成イメージを確認
-5. **4. 保存・公開**
-   - **プロジェクトを保存** … `.json` を保存。あとで「保存したプロジェクトを読み込む」から開いて編集できる
-   - **HTMLをダウンロード** … `index.html` を取得。レンタルサーバーや GitHub Pages などにアップロードして公開できる
-
-## ファイル構成
-
-- `index.html` … メイン画面
-- `css/style.css` … スタイル
-- `js/templates.js` … テンプレート定義（デザインの種類と入力項目）
-- `js/app.js` … 編集・プレビュー・保存・読み込みの処理
+**URL**: **https://ayame-jp.github.io/kantan-site-tool/**
 
 サーバーは不要です。オフラインでも動作します。
