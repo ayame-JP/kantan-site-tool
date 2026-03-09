@@ -4,6 +4,22 @@
 
 コードを書かずに、フォーム入力だけでサイトの内容を編集し、HTMLとしてダウンロードしたり、あとから編集用にプロジェクトを保存できるツールです。
 
+---
+
+## 誰でもアクセスできるURLで使う（GitHub Pages）
+
+このリポジトリを **GitHub Pages** で公開すると、次のURLで誰でもツールにアクセスできます。
+
+**公開後のURL**: **https://ayame-jp.github.io/kantan-site-tool/**
+
+### 設定手順（1回だけ）
+
+1. GitHub で [ayame-JP/kantan-site-tool](https://github.com/ayame-JP/kantan-site-tool) を開く
+2. **Settings**（設定）→ 左メニューの **Pages**
+3. **Build and deployment** の **Source** で **Deploy from a branch** を選択
+4. **Branch** で `main`、**Folder** で **/ (root)** を選び **Save** をクリック
+5. 1〜2分待つと、上記URLで公開されます
+
 ## 使い方
 
 1. `index.html` をブラウザで開く（ダブルクリックまたはブラウザにドラッグ）
